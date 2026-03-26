@@ -1,7 +1,7 @@
 :root{
     --color-green: hsl(75, 94%, 57%);
     --color-white: hsl(0, 0%, 100%);
-    --color-frey-700: hsl(0, 0%, 20%);
+    --color-grey-700: hsl(0, 0%, 20%);
     --color-grey-800: hsl(0, 0%, 12%);
     --color-grey-900: hsl(0, 0%, 8%);
 }
@@ -9,15 +9,54 @@
 
 body {
     background-color: var(--color-grey-900);
+    font-family: "Rubik", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container img{
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    transition: 300ms;
+}
+
+.container:hover img{
+    border-color: var(--color-green);
+    scale: 1.1;
+}
+
+.container h1 {
+    font-size: 38px;
+    font-weight: 300px;
 }
 
 .container h2 {
     color: var(--color-green);
-    width: 550px;
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.container p {
+    font-size: 13;
+    font-weight: 200;
 }
 
 .container{
     background-color: var(--color-grey-800);
-    color: var(--color-white)
+    color: var(--color-white);
+    text-align: center;
+    width: 550px;
 }
 
+.social li {
+    background-color: var(--color-grey-700);
+}
+
+.social a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14;
+    font-weight: 400;
+}
